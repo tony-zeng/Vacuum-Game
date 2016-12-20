@@ -346,7 +346,6 @@ public class VacuumGame {
    * @param nextMove character representing which way vacuum will move.
    */
   public void move(char nextMove) {
-    System.out.println(dusts);
     // if move is p1 up
     if (nextMove == Constants.P1_UP) {
       if (!restrictions(vacuum1.getRow() + Constants.UP, vacuum1.getColumn())) {
@@ -413,7 +412,6 @@ public class VacuumGame {
    */
   public boolean gameOver() {
     if (dusts.isEmpty() && dustBalls.isEmpty()) {
-      System.out.println("reached gamevoer");
       return true;
     }
     return false;
@@ -427,7 +425,6 @@ public class VacuumGame {
    * @return char representing either player 1, player 2 or a tie.
    */
   public char getWinner() {
-    System.out.println("reached getwinner");
     if (getVacuum1().getScore() > getVacuum2().getScore()) {
       return Constants.P1;
     } else if (getVacuum1().getScore() < getVacuum2().getScore()) {
