@@ -1,0 +1,16 @@
+A pacman like game designed in Java. 
+There are two different players in the game. The goal of the game is to be the player with the higher score in the end. The player is 
+represented as a Vacuum. Each player must collect dust and dustballs to gain points, and empty their vacuum inside a dumpster once it
+gets full by going over the dumpster. Once a player collects a dust/dustball it will dissapear from the map. Dusts are stationary and 
+dustballs can move. For every move a player makes, the dustball moves in an arbitrary direction. A dustball will always leave dust behind
+everytime it moves. The game ends when all dust/dustballs are collected.
+
+-Each player is represented by '1' and '2' respectively.
+-Dumpsters are represented by 'U'
+-Dusts are represented as '.'
+-Dustballs are represented as 'o'
+-Walls are represented as 'X'
+-Capacities for vacuums can be set for the game starts.
+
+Player 1 movements: 'w' - up, 'd' - right, 's' - down, 'a' - left
+Player 2 movements: 'i' - up, 'l' - right, 'k' - down, 'j' - left
